@@ -32,23 +32,41 @@ namespace BruteforceAttackCaesarCipher
         {
             string BruteforceText = CipherText;
             char[] characterCipher = BruteforceText.ToCharArray();
+
             char chr;
             for (int key = 0; key < 26; key++)
             {
-                string Klartext = "";
+                string Klartext = Decryption(characterCipher, key);
 
-                for (int i = 0; i < characterCipher.Length; i++)
-                {
-                    int index = characterCipher[i] - 97;
-                    index = (index - key + 26) % 26;
-                    chr = (char)(index + 97);
-                    Klartext += chr;
-
-
-                }
 
                 Console.WriteLine("Wenn der Schlüssel = " + key + " wäre \t " + " biete ich als Beispiel folgende Variante an: \t:  " + Klartext);
             }
+        }
+        static public string Decryption(char[] vsecretMessage, int vkey)
+        {
+
+            char[] alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".ToCharArray();
+            string verschluesselteNachricht = "";
+
+
+            for (int i = 0; i < vsecretMessage.Length; i++)
+            {
+                char c = vsecretMessage[i];
+
+                if (alphabet.Contains(c))
+                {
+                    int position = Array.IndexOf(alphabet, c);
+                    int position_new = position - vkey;
+                    int rest = position_new % 26;
+                    verschluesselteNachricht += alphabet[rest];
+                }
+                else
+                {
+                    verschluesselteNachricht += c;
+                }
+            }
+
+            return verschluesselteNachricht;
         }
     }
 }
