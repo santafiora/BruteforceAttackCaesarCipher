@@ -1,7 +1,0 @@
-C:\youtube\fortgeschrittene\BruteforceAttackCaesarCipher\bin\Debug\BruteforceAttackCaesarCipher.exe.config
-C:\youtube\fortgeschrittene\BruteforceAttackCaesarCipher\bin\Debug\BruteforceAttackCaesarCipher.exe
-C:\youtube\fortgeschrittene\BruteforceAttackCaesarCipher\bin\Debug\BruteforceAttackCaesarCipher.pdb
-C:\youtube\fortgeschrittene\BruteforceAttackCaesarCipher\obj\Debug\BruteforceAttackCaesarCipher.csprojAssemblyReference.cache
-C:\youtube\fortgeschrittene\BruteforceAttackCaesarCipher\obj\Debug\BruteforceAttackCaesarCipher.csproj.CoreCompileInputs.cache
-C:\youtube\fortgeschrittene\BruteforceAttackCaesarCipher\obj\Debug\BruteforceAttackCaesarCipher.exe
-C:\youtube\fortgeschrittene\BruteforceAttackCaesarCipher\obj\Debug\BruteforceAttackCaesarCipher.pdb
