@@ -23,8 +23,7 @@ namespace BruteforceAttackCaesarCipher
         }
 
         /// <summary>
-        /// Die Zeichenlänge könnte man in einem Char aus Alphabet Array prüfen!
-        /// Die Zeichen kommen ja aus einem Zeichensatz "Unicode-Zeichen" deshalb die -97 / +97
+        
         /// </summary>
         /// <param name="CipherText"></param>
         static public void BruteforceAttackCaesarCipher(string CipherText)
@@ -33,7 +32,7 @@ namespace BruteforceAttackCaesarCipher
             string BruteforceText = CipherText;
             char[] characterCipher = BruteforceText.ToCharArray();
 
-            char chr;
+            
             for (int key = 0; key < 26; key++)
             {
                 string Klartext = Decryption(characterCipher, key);
